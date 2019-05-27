@@ -1,13 +1,22 @@
-<div class="faixa-superior">
-  {{usuario.nome}}
-</div>
+<div class="faixa-superior">{{usuario.nome}}</div>
 
 
 <div class="conteudo">
 
 <span class="menu-esquerdo">
-       </span>
+
+  <div class="menu">
+  <div  *ngFor="let d of disciplinas">
+    <button  (click)="disciplinaSelecionada(d)">{{ d.nome }}</button>
+  </div>
+</div>
+</span>
 <Span class="area">
+
+
+  <h1>{{ tituloDisciplina }}</h1>
+
+
 </Span>
 
 

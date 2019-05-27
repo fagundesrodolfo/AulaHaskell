@@ -38,6 +38,7 @@ const appRouters: Route[] = [
     RouterModule,
     {provide: APP_BASE_HREF, useValue: '/'}
   ],
-  bootstrap: [RootComponent]
+ // bootstrap: [RootComponent]
+  bootstrap: [AlunoComponent]
 })
 export class AppModule { }

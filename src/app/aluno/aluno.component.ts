@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../model/Usuario';
-import { Disciplina} from '../model/Disciplina'
+import { Disciplina } from '../model/Disciplina'
 
 @Component({
   selector: 'app-aluno',
@@ -9,19 +9,42 @@ import { Disciplina} from '../model/Disciplina'
 })
 export class AlunoComponent implements OnInit {
 
-  usuario: Usuario
+  usuario = new Usuario()
 
-  disciplinas: Disciplina[]
+  tituloDisciplina = "Haskell"
 
-  constructor() { }
+  disciplinaAtual = new Disciplina()
+
+  disciplinas = [
+    {
+      nome:"Haskell"
+    },
+    {
+      nome:"Cobol"
+    },
+    {
+      nome:"Calculo"
+    },
+    {
+      nome:"Banco de dados"
+    },
+  ]
+
+
+  constructor() {
+    
+    //this.disciplinas.push(d)
+    this.usuario.nome = "Rodolfo"
+   }
 
   ngOnInit() {
     
-    let d = new Disciplina()
-    d.nome = "Haskell"
+  
+  }
 
-    this.disciplinas.push(d)
-    this.usuario.nome = "Rodolfo"
+  disciplinaSelecionada(d: Disciplina){
+    console.log(d.nome);
+    this.tituloDisciplina = d.nome
   }
 
 }
