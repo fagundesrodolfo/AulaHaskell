@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.usuario = new Usuario()
+    this.usuario = new Usuario("Rodolfo")
   }
 
 

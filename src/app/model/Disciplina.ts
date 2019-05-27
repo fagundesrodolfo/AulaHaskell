@@ -1,9 +1,11 @@
 export class Disciplina {
 
-    constructor() {
+  
+    constructor(nome: String) {
+      this.nome = nome
     }
   
-    nome: string = "";
+    nome: String = "";
     p1 = 0;
     p2 = 0;
     p3 = 0;

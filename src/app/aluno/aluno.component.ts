@@ -9,9 +9,9 @@ import { Disciplina } from '../model/Disciplina'
 })
 export class AlunoComponent implements OnInit {
 
-  usuario = new Usuario()
+  usuario = new Usuario("Rodolfo")
 
-  tituloDisciplina = "Haskell"
+  tituloDisciplina: String = "Haskell"
   p1 = 0
   p2 = 0
   p3 = 0

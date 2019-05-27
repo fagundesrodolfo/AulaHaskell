@@ -13,17 +13,16 @@
 </span>
 <Span class="area">
 
-
   <h1>{{ tituloDisciplina }}</h1>
 
   <div class="notas">
-
     <table >
       <thead>
         <tr>
-            <th colspan="4"> Notas </th>
+            <th colspan="4"> {{disciplinaSelecionada.nome}} </th>
           </tr>
           <tr>
+              <th> Nome </th>
               <th> P1 </th>
               <th> P2 </th>
               <th> P3 </th>
@@ -32,12 +31,12 @@
       </thead>
       <tbody>
         <tr></tr>
-        <tr>
-          <td> {{p1}} </td>
-          <td> {{p2}} </td>
-          <td> {{p3}} </td>
-          <td> {{media}} </td>
-
+        <tr *ngFor="let a of alunos">
+          <td> {{ a.nome }}</td>
+          <td> <input type="number"> </td>
+          <td> <input type="number"> </td>
+          <td> <input type="number"> </td>
+          <td> 0 </td>
         </tr>
       </tbody>
     </table>

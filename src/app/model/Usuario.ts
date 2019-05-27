@@ -1,11 +1,12 @@
 export class Usuario {
 
-    constructor() {
+    constructor(nome: String) {
+      this.nome = nome
     }
   
-    nome: string = "";
-    email: string = "";
-    cpf: string;
+    nome: String = "";
+    email: String = "";
+    cpf: String;
     nascimento: Date;
-    senha: string = "";
+    senha: String = "";
   }
