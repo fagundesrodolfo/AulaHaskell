@@ -35,6 +35,11 @@ export class LoginComponent implements OnInit {
       console.log("Usuario: " + this.usuario.email);
       this.router.navigateByUrl('aluno')
     }
+
+    if(this.usuario.email == "professor@gmail.com" && this.usuario.senha == "123"){
+      console.log("Usuario: " + this.usuario.email);
+      this.router.navigateByUrl('professor')
+    }
     
   }
 

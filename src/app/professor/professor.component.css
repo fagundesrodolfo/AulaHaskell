@@ -1,0 +1,78 @@
+.faixa-superior{
+    padding-left: 100px;
+    padding-top: 20px; 
+    background-color: blue;
+    height: 100px;
+    top: 0px;
+    font-size: 50px;
+    align-items: center;
+}
+
+.conteudo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    height: 800px;
+}
+
+.area{
+position: absolute;
+top: 0px;
+right: 0;
+ width: 75%;
+ height: 100%;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    margin-block-end: 5px;
+
+    font-size: 25px;
+}
+
+.menu-esquerdo{
+    position: relative;
+    padding: 30px;
+    top: 0px;
+    bottom: 0px;
+    background-color: cornflowerblue; 
+    width: 25%;
+    height: 100%;
+}
+
+
+button{
+    margin: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 40px;
+    width: 100%;
+    color: blue;
+    text-align: center;
+    border-radius: 15px
+}
+
+
+h1{
+    position: relative;
+    width: 100%;
+    text-align: center
+}
+
+thead{
+    border:solid 3px #aaffaa
+}
+
+tbody{
+    border:  solid 2px #cecece
+}
+
+table{
+    margin: 20%;
+    position: relative;
+    width: 50%;
+    text-align: center
+}

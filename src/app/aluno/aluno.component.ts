@@ -12,21 +12,42 @@ export class AlunoComponent implements OnInit {
   usuario = new Usuario()
 
   tituloDisciplina = "Haskell"
+  p1 = 0
+  p2 = 0
+  p3 = 0
+  media = 0
+  faltas = 0
 
-  disciplinaAtual = new Disciplina()
+  disciplinaAtual = {}
 
   disciplinas = [
     {
-      nome:"Haskell"
+      nome:"Haskell",
+      p1: 0,
+      p2: 2,
+      p3: 8,
+      faltas:0
     },
     {
-      nome:"Cobol"
+      nome:"Cobol",
+      p1: 0,
+      p2: 2,
+      p3: 8,
+      faltas:0
     },
     {
-      nome:"Calculo"
+      nome:"Calculo",
+      p1: 0,
+      p2: 2,
+      p3: 8,
+      faltas:0
     },
     {
-      nome:"Banco de dados"
+      nome:"Banco de dados",
+      p1: 0,
+      p2: 2,
+      p3: 8,
+      faltas:0
     },
   ]
 
@@ -44,7 +65,12 @@ export class AlunoComponent implements OnInit {
 
   disciplinaSelecionada(d: Disciplina){
     console.log(d.nome);
+    this.disciplinaAtual = d
     this.tituloDisciplina = d.nome
+    this.p1 = d.p1
+    this.p2 = d.p2
+    this.p3 = d.p3
+    this.media = (this.p1 + this.p2) / 2
   }
 
 }

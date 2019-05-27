@@ -29,19 +29,19 @@ right: 0;
     position: relative;
     width: 100%;
     margin-block-end: 5px;
-    padding-top: 300px;
+
     font-size: 25px;
 }
 
 .menu-esquerdo{
-    position: absolute;
+    position: relative;
+    padding: 30px;
     top: 0px;
     bottom: 0px;
     background-color: cornflowerblue; 
     width: 25%;
     height: 100%;
 }
-
 
 
 button{
@@ -51,12 +51,28 @@ button{
     font-size: 40px;
     width: 100%;
     color: blue;
-    text-align: center
+    text-align: center;
+    border-radius: 15px
 }
 
 
 h1{
     position: relative;
     width: 100%;
+    text-align: center
+}
+
+thead{
+    border:solid 3px #aaffaa
+}
+
+tbody{
+    border:  solid 2px #cecece
+}
+
+table{
+    margin: 20%;
+    position: relative;
+    width: 50%;
     text-align: center
 }
